@@ -1,18 +1,9 @@
 import React from "react";
 
+export const User = (props) => <h1>Olá {
 
-export class User extends React.Component {
-    
-    constructor(props){
-        super(props);
-    }
+  props.match.params.nome ? props.match.params.nome : ""
+  +
+  props.match.params.id ? props.match.params.id:""
 
-  
-
-    render() {
-      return (
-       <h1>Olá! {this.props.match.params.nome}</h1>
-      );
-    }
-
-  }
+}</h1>
